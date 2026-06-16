@@ -7,7 +7,7 @@
 -> then We took the same prompt, and understood how responses differ from model to model, and how parameters also effect the type of responses generated from those models <br> 
 -> Conculsions are written at the end of the lab <br> 
 ........... <br> 
-Just for myself, I am noting this down, as it was creating confusion for me:
+Just for myself, I am noting this down, as it was creating confusion for me: <br>
 Watsonxai: IBM's platform <br> 
 llama: Meta's Model. This AI is being hosted by IBM on their watsonx.ai platform <br> 
 WatsonxLLM: This is a connector class in python that lets us talk with whatever model in running on Watsonx.ai. <br> 
