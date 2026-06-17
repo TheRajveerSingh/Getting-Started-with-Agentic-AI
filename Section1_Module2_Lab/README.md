@@ -6,6 +6,7 @@
 -> then creating instances for those models, by (model X parameter_type), so here we had 4 of them, since we were working with 2 types of models(llama & granite), and two types of parameters (creative & precise), <br> 
 -> then We took the same prompt, and understood how responses differ from model to model, and how parameters also effect the type of responses generated from those models <br> 
 -> Conculsions are written at the end of the lab <br> 
+4. The "03_PromtTemplateTypes" file is about understanding how to use the three type of Prompt templates: String, Chat, and MessagePlaceholder. It also helped me revise the concept of using chains: how to pipe a prompt to a llm. Also, some features in that file, such as for 'MessagePlaceholder' weren't working, so if time persists, I'll surely try it with another model while practicing it for myself <br>
 ........... <br> 
 Just for myself, I am noting this down, as it was creating confusion for me: <br>
 Watsonxai: IBM's platform <br> 
