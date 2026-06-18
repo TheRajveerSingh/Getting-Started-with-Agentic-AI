@@ -7,6 +7,8 @@
 -> then We took the same prompt, and understood how responses differ from model to model, and how parameters also effect the type of responses generated from those models <br> 
 -> Conculsions are written at the end of the lab <br> 
 4. The "03_PromtTemplateTypes" file is about understanding how to use the three type of Prompt templates: String, Chat, and MessagePlaceholder. It also helped me revise the concept of using chains: how to pipe a prompt to a llm. Also, some features in that file, such as for 'MessagePlaceholder' weren't working, so if time persists, I'll surely try it with another model while practicing it for myself <br>
+5. The "04_OutputParser" file is about how to use Output Parsers. Basically, if we want the llm to give our response in a structured way (such as json or csv), which could be helpful if we're storing it in a database. Anyway, the problem I faced here was that initially there was some problem with the wrapping. Then I shifted to llama, and it worked. <br>
+I also understood how "promptTemplates" need to be written according to the models we're using, and that's a big learning, as initially, the default promptTemplate which the course had procided didn't work, but then I switched it into a better promptTemplate, and it actually worked! The JSON parser worked fine this time. My experience and learning for this has been also written in that file, at the very last, along with the reason why the problem was occuring. <br>
 ........... <br> 
 Just for myself, I am noting this down, as it was creating confusion for me: <br>
 Watsonxai: IBM's platform <br> 
