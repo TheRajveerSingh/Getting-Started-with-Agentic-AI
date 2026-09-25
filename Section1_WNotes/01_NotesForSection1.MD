@@ -23,10 +23,11 @@
 4. LangGraph
 ## Memory:
 #### 5 types of Memory and their uses:
-| Memory type                            | What it does                                                  |
-| -------------------------------------- | ------------------------------------------------------------- |
-| ChatMessageHistory                 | You manually add/store messages                               |
-| Conversation Buffer Memory         | Automatically stores the entire conversation              |
-| Conversation Buffer Window Memory  | Stores only the recent `k` messages                       |
-| Conversation Summary Memory        | Summarizes the conversation                               |
-| Conversation Summary Buffer Memory | Summarizes old messages + keeps recent `k` messages fully |
+1. ChatMessageHistory -> We manually add/store messages<br>
+2. Conversation Buffer Memory -> Automatically stores the entire conversation<br>
+3. Conversation Buffer Window Memory -> Stores only the recent `k` messages<br>
+4. Conversation Summary Memory -> Summarizes the conversation<br>
+5. Conversation Summary Buffer Memory -> Summarizes old messages + keeps recent `k` messages fully<br>
+#### Difference between a RetrieverQA and a Chatbot:
+1. A RetrieverQA is where we 'retrieve' information from a Doc(web of pdf). We create a document object to store them, create chunks of it by deciding its size and overlapping, store it as vector embeddings in a vectore store, and as we ask our query, it compares our query's embeddings with chunk's embeddings. And those chunks which associate more with our query are used to give relevent answers to us.
+2. A chatbot in the other hand uses methods of memory storing AiMessages, SystemMessages, and HumanMessages to help the LLM answer our questions.
