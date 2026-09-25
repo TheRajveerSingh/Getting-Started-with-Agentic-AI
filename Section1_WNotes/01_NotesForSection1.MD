@@ -1,0 +1,32 @@
+## Chains:
+#### Why are Chains used:
+1. Structuring Multi-Step Workflows
+2. Connecting LLms to External Data
+3. Injecting Memory into Conversations
+4. Data Cleansing and Verification
+#### Types of Chains:
+1. Retrieval & RAG Chains:
+-> RetievalChain <br>
+-> ConversationalRetrievalChain <br>
+2. Branching & Router Chains:
+-> RouterChain <br>
+-> RunnableBranch <br>
+3. Data Transformation Chains:
+-> Tranform Chain <br>
+4. Specialized Utility Chains: 
+-> APIChain / OpenAPIChain <br>
+-> GraphQAChain <br>
+#### Evolution of Chains:
+1. Simple Chains (LLMChain)
+2. Simple Sequenctial Chain
+3. LCEL (RunnableSequence & RnnableParallel)
+4. LangGraph
+## Memory:
+#### 5 types of Memory and their uses:
+| Memory type                            | What it does                                                  |
+| -------------------------------------- | ------------------------------------------------------------- |
+| ChatMessageHistory                 | You manually add/store messages                               |
+| Conversation Buffer Memory         | Automatically stores the entire conversation              |
+| Conversation Buffer Window Memory  | Stores only the recent `k` messages                       |
+| Conversation Summary Memory        | Summarizes the conversation                               |
+| Conversation Summary Buffer Memory | Summarizes old messages + keeps recent `k` messages fully |
